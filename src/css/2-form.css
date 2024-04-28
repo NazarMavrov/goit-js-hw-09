@@ -1,0 +1,26 @@
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+
+.form-submit {
+    background-color: #4e75ff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 95px;
+    height: 40px;
+}
