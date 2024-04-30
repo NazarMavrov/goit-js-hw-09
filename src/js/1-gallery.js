@@ -85,20 +85,8 @@ const imageList = document.querySelector('.gallery');
 
 imageList.insertAdjacentHTML('beforeend', markup);
     
-imageList.addEventListener('click', onImageClick);
-
-function onImageClick(event) {
-    event.preventDefault();
-    const clickedElement = event.target;
-    if (clickedElement.classList.contains("gallery-image")) {
-
-        const largeImage = clickedElement.dataset.source;
-        const description = clickedElement.alt;
-        const lightbox = new SimpleLightbox('.gallery a', {
-            captionsData: 'alt',
-            captionPosition: 'bottom',
-            captionDelay: 250,
-})
-
-    }
-}
+const lightbox = new SimpleLightbox('.gallery a', {
+    captionsData: 'alt',
+    captionPosition: 'bottom',
+    captionDelay: 250,
+});
